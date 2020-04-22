@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-top {
+  position: relative;
+}
+
+.header-intro-img {
+  width: 100%;
+}
+
+.header-intro-p {
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  width: 340px;
+  font-size: 20px;
+  font-family: 'Comic Neue', cursive;
+  color: black;
+}
+
+.main-mid {
+  display: flex; 
+  justify-content: space-around;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.events img, .enroll img, .donate img { 
+  border-radius: 5px; 
+  max-width: 100%;
+}
+
+.events, .enroll, .donate {
+  border: 3px solid darkslategray;
+  border-radius: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 25px;
+  
+}
+.footer-nav {
+  background: darkslategray;
+  height: 120px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategray;
+    height: 70px;
+  }
+  .logo { 
+    width: 50px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-around; 
+  }
+  .right h4 {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategray;
+    height: 70px;
+  }
+  .logo { 
+    width: 50px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-around; 
+  }
+  .right h4 {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+  .events {
+    display: inline-block;
+    width: 400px;
+  }
+
+  .enroll {
+    display: inline-block;
+    width: 400px;
+  }
+
+  .donate {
+    display: inline-block;
+    width: 400px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkslategray;
+    height: 70px;
+  }
+  .logo { 
+    width: 50px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: space-around; 
+  }
+  .right h4 {
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
