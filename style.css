@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+a { color:black  } /* Globally */
+
 /* nav */
 .nav {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -12,7 +14,6 @@
   justify-content: space-around;
   background-color: darkslategray;
   max-width: 100%;
-  /* height: 70px; this one goes in the media queries*/ 
 }
 .logo { 
   width: 50px;
@@ -75,78 +76,51 @@
 
 /* footer */
 .footer-nav {
-  bottom: 0px;
   background: darkslategray;
   height: 150px;
   width: 100%;
-  display: flex;
-}
-
-.footer-left-side {
-  display: flex;
-  color: white;
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-left: 100px;
+  position: relative;
 }
 
-.footer-right-side {
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: white;
-  margin-right: 100px;
+/* footer social media icons */
+.fa-facebook-square {
+  font-size: 25px;
 }
 
-/* social media icons */
-.fa {
-  font-size: 50px;
+.footer-title {
+  display: inline-block;
+  padding: 5px;
 }
 
-.footer-contact {
-  padding: 20px;
-  font-size: 20px;
-}
-.footer-contact ul {
-  list-style-type: none;
-}
-
-.footer-contact ul li {
-  padding: 3px;
+.footer-logo { 
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 100px;
 }
 
-.footer-logo {
-  width: 100px;
-  height: 140px;
+.footer-contact-information {
+  border-left: 1px solid black;
+  display: inline-block;
+  padding: 15px;
+  list-style-position: inside;
 }
 
-@media screen and (min-width: 3px) and (max-width: 375px) {
-  .header-intro-p {
-    max-width: 80%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: auto;
-  }
-
-  .main-mid {
-    flex-direction: column;
-  }
+.footer-creator-copyright {
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px){
-  .header-intro-img {
-    padding: 10px;
-    border-radius: 20px;
-  }
+.footer-contact-information li {
+  padding: 5px;
+  margin: 3px;
+}
 
-  .header-intro-p {
-    max-width: 80%;
-    padding: 10px;
-    margin: auto;
-    font-size: 25px;
-    line-height: 1.4;
-    border: 1px solid black;
-    border-radius: 5px;
-  }
-
+@media screen and (min-width: 3px) and (max-width: 768px) {
+  /* nav */
   .nav {
     display: flex;
     justify-content: space-around;
@@ -172,6 +146,23 @@
     flex-direction: column;
   }
 
+  /* header */
+  .header-intro-p {
+    max-width: 80%;
+    padding: 10px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.4;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .header-intro-img {
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+ 
   /* events */
   .events, .enroll, .donate {
     display: inline-block;  
@@ -180,6 +171,16 @@
     border: 3px solid darkslategray;
     border-radius: 10px;
     margin: 10px;
+  }
+
+  .submit-events, .submit-enroll, .submit-donate {
+    margin-top: 28px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: teal;
+    border: 1px solid teal;
+    color: ghostwhite;
+    z-index: -1;
   }
 
   .events-img, .enroll-img, .donate-img {
@@ -191,7 +192,7 @@
 @media screen and (min-width: 768px) and (max-width: 1360px) {
   .header-intro-p {
     max-width: 80%;
-    border: 1px solid green;
+    border: 1px solid darkslategray;
     border-radius: 5px;
     padding: 10px;
     margin: auto;
