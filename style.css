@@ -81,6 +81,7 @@ a { color:black  } /* Globally */
   width: 100%;
   font-family: 'IBM Plex Sans', sans-serif;
   position: relative;
+  display: flex;
 }
 
 /* footer social media icons */
@@ -90,7 +91,10 @@ a { color:black  } /* Globally */
 
 .footer-title {
   display: inline-block;
-  padding: 5px;
+  padding-left: 5px;
+  width: 200px;
+  min-width: 200px;
+  max-width: 350px;
 }
 
 .footer-logo { 
@@ -101,16 +105,18 @@ a { color:black  } /* Globally */
 }
 
 .footer-contact-information {
+  font-size: 15px;
   border-left: 1px solid black;
   display: inline-block;
-  padding: 15px;
+  padding-top: 10px;
+  padding-left: 3px;
   list-style-position: inside;
 }
 
 .footer-creator-copyright {
-  font-size: 15px;
+  font-size: 10px;
   position: absolute;
-  bottom: 0;
+  bottom: 150px;
   right: 5px;
 }
 
@@ -170,7 +176,7 @@ a { color:black  } /* Globally */
     max-width:100%;
     border: 3px solid darkslategray;
     border-radius: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
   }
 
   .submit-events, .submit-enroll, .submit-donate {
@@ -246,7 +252,6 @@ a { color:black  } /* Globally */
     background: teal;
     border: 1px solid teal;
     color: ghostwhite;
-    z-index: -1;
   }
 
 }
