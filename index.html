@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
   </body>
@@ -45,35 +46,52 @@
 
     <div class="main-mid">
       <div class="events">
-        <img src="events.jpg" alt="events" width='400px' heigth='400px'>
-        <p>EVENTS ipsum dolor sit amet, consectetur adipisicing elit. Ea cumque aspernatur ullam, nam recusandae illo explicabo fugit doloribus minima eos corporis non consequatur minus eum quis nemo laborum ipsa sed hic quae maiores totam quod iusto! Quae itaque doloremque</p>
-        <button type="submit">Check Events</button>
+        <div class="events-content">
+          <img class="events-img" src="events.jpg" alt="events" width='400px' heigth='400px'>
+          <p>Check Out Our Upcoming Events Filled With Excitement And Fun</p>
+        </div>
+        <button class='submit-events' type="submit">Check Events</button>
       </div>
 
       <div class="enroll">
-        <img src="enroll.jpg" alt="enroll-picture" width='400px' heigth='400px'>
-        <p>Get to have fun with people of african heritage!</p>
-        <button type="submit">Enroll</button>
+        <div class="enroll-content">
+          <img class="enroll-img" src="enroll.jpg" alt="enroll-picture" width='400px' heigth='400px'>
+          <p>Enroll And Get To Have Fun With People Of African Heritage And With The Community!</p>
+        </div>
+        <button class='submit-enroll' type="submit">Enroll</button>
       </div>
 
       <div class="donate">
-        <img src="Donate.jpg" alt="donation-picture" width='400px' heigth='400px'>
-        <p>DONATE Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem harum vero perferendis ratione debitis, itaque dolore provident autem perspiciatis inventore unde nulla non ducimus repellendus accusantium ut sequi fugit explicabo officiis voluptates consequatur aut facilis sunt. Minus, asperiores, maxime et dolore, dignissimos laboriosam quo labore veniam vitae nulla sint ut!</p>
-        <button type="submit">Donate</button>
+        <div class="donate-content">
+          <img class="donate-img" src="Donate.jpg" alt="donation-picture" width='400px' heigth='400px'>
+          <p>Help Us Unite More People Together And Make The Community More Involved Through Donating. </p>
+        </div>
+        <button class='submit-donate' type="submit">Donate</button>
       </div>
      
     </div>
   </main>
 
     <div class="footer-nav">
-      <span class='footer-full-name'>Manitoba African Cup Of Nations</span>
-      <span class='footer'></span>
-      <ul>
-        <h4>MACN</h4>
-        <h4>Terms of Service</h4>
-        <h4>Privacy Policy</h4>
-        <h4>Contact Us</h4>
-      </ul>
+      <div class="footer-left-side"> 
+        <!-- logo on the left below it, add the contact information -->
+        <img src="logo.png" class="footer-logo" alt="">
+        <span>Manitoba African Cup Of Nations - MACN</span>
+
+        <div class="footer-contact">
+          <ul>
+            <li>+431 999 0000</li>
+            <li>gode.katembo@abcd.com</li> 
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right-side">
+        <ul class="social-media">
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-twitter-square"></i></li>
+        </ul>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>
