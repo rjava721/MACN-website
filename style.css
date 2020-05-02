@@ -7,6 +7,7 @@
 a { color:black  } /* Globally */
 
 /* nav */
+/* basic nav structure along with some styling */
 .nav {
   font-family: 'IBM Plex Sans', sans-serif;
   color: white;
@@ -43,6 +44,7 @@ a { color:black  } /* Globally */
 }
 
 /* events */
+/* general events styling while making them flexboxx, there are a few repetitions like in the first media query */
 .main-mid {
   display: flex; 
   justify-content: space-around;
@@ -92,7 +94,6 @@ a { color:black  } /* Globally */
 .footer-title {
   display: inline-block;
   padding-left: 5px;
-  width: 200px;
   min-width: 200px;
   max-width: 350px;
 }
@@ -148,17 +149,15 @@ a { color:black  } /* Globally */
     margin-top: 10px;
   }
 
-  .main-mid {
-    flex-direction: column;
-  }
-
   /* header */
+  /* styling the header p while centering it and adding a border */
   .header-intro-p {
     max-width: 80%;
     padding: 10px;
     margin: auto;
     font-size: 20px;
-    line-height: 1.4;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.3;
     border: 1px solid black;
     border-radius: 5px;
   }
@@ -170,6 +169,11 @@ a { color:black  } /* Globally */
 
  
   /* events */
+  /* make the events in column format with flexbox and styling the boxes, the height is fixed to 350px and width to 450px */
+  .main-mid {
+    flex-direction: column;
+  }
+
   .events, .enroll, .donate {
     display: inline-block;  
     width: 100%;
@@ -196,6 +200,8 @@ a { color:black  } /* Globally */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1360px) {
+
+  /* change the header p to below the front picture and centered */
   .header-intro-p {
     max-width: 80%;
     border: 1px solid darkslategray;
@@ -207,6 +213,7 @@ a { color:black  } /* Globally */
   }
 
   /* nav */
+   /* basic steps to creating a nav bar and styling it */
   .nav {
     display: flex;
     justify-content: space-around;
@@ -229,6 +236,7 @@ a { color:black  } /* Globally */
   }
 
   /*  events */
+  /* make the events in row direction and styling them */
   .main-mid {
     flex-direction: row;
   }
@@ -254,8 +262,25 @@ a { color:black  } /* Globally */
     color: ghostwhite;
   }
 
+  /* footer */
+  /* we center it while having it in display flex which makes the contact us part stick next to it */
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-title {
+    padding: 5px;
+  }
+
+  .footer-contact-information {
+    padding: 10px;
+  }
+
 }
-@media screen and (min-width: 1360px) and (max-width: 1920px) {
+@media screen and (min-width: 1360px) and (max-width: 4000px) {
+
+  /* placing the header p in a convenient position in the header picture with position absolute */
   .header-intro-p {
     margin-left: 10px;
     position: absolute;
@@ -264,6 +289,9 @@ a { color:black  } /* Globally */
     width: 340px;
     font-size: 20px;
   }
+
+  /* nav bar */
+  /* basic steps to creating a nav bar and styling it */
   .nav {
     display: flex;
     justify-content: space-around;
@@ -284,6 +312,7 @@ a { color:black  } /* Globally */
   }
 
    /*  events */
+   /* make the events in row format with flexbox and styling the boxes, the height is fixed to 350px and width to 450px */
    .main-mid {
     flex-direction: row;
   }
@@ -310,6 +339,21 @@ a { color:black  } /* Globally */
     background: teal;
     border: 1px solid teal;
     color: ghostwhite;
-    z-index: -1;
+  }
+
+  /* footer */
+  /* we center it while having it in display flex which makes the contact us part stick next to it */
+
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-title {
+    padding: 5px;
+  }
+
+  .footer-contact-information {
+    padding: 10px;
   }
 }
