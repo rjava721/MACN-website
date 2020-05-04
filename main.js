@@ -1,17 +1,6 @@
 let mainImg = document.querySelector(".header-intro-img");
 
-// change the front picture if someone is using a tablet
-if (screen.width <= 768) {
-  mainImg.setAttribute("src","MACN-front.jpg");
-  console.log("bro im supposed to change");
-}
-
-if (screen.width > 768) {
-  console.log("i am above 768 px");
-  console.log(screen.width);
-  console.log("my current window width is " + innerWidth);
-  mainImg.setAttribute("src","collage-front-1.jpg");
-}
+// 2 things to be careful of, window.innerWidth and screen.width
 
 window.addEventListener("resize", () => {
   if (window.innerWidth < 768) {

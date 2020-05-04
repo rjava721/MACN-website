@@ -112,7 +112,7 @@ a { color:white; text-decoration: none;  } /* Globally */
   display: inline-block;
   padding-top: 10px;
   padding-left: 3px;
-  list-style-position: inside;
+  list-style-type: none;
 }
 
 .footer-creator-copyright {
