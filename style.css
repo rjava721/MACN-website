@@ -107,7 +107,7 @@ a { color:white; text-decoration: none;  } /* Globally */
 }
 
 .footer-contact-information {
-  font-size: 15px;
+  font-size: 10px;
   border-left: 1px solid black;
   display: inline-block;
   padding-top: 10px;
